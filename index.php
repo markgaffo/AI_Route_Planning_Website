@@ -71,13 +71,9 @@
         
             <b><p class="info">Distance(Km): </b><p id="best-route">0</p></p>
         
-       
  </div>
-  </right
+</right
   </div>
- 
 
-   
 </body>
-
 </html>

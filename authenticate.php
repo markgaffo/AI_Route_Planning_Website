@@ -15,8 +15,8 @@ if ( mysqli_connect_errno() ) {
 if ( !isset($_POST['username'], $_POST['password']) ) {
 	// Coant get the data that should have been sent.
 	die ('Please fill out both the username and password field!');
-
 }
+
 // Prepare SQL,  will prevent SQL injection.
 if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE username = ?')) {
 	

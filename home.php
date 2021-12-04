@@ -24,7 +24,7 @@ if (!isset($_SESSION['loggedin'])) {
 </head>
 
 <body>
- <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
     <div class="container">
       <h1><a class="navbar-brand" href="#">SoFit</a></h1>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,9 +45,7 @@ if (!isset($_SESSION['loggedin'])) {
           </li>
           <li class="nav-item">
             <a class="nav-link" href="profile.php">Profile</a>
-          </li>
-          
-		  
+          </li>		  
           <li class="nav-item">
            <a href="logout.php" class="nav-link">Logout</a>
           </li>
@@ -55,6 +53,7 @@ if (!isset($_SESSION['loggedin'])) {
       </div>
     </div>
   </nav>
+  
 <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">

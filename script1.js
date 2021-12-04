@@ -5,6 +5,7 @@ var polylinePath;
 var markerLoc = [];
 var lastMarkerLoc = [];
 var markers = [];
+
 var distArray = [];
 //showing basic start path between markers with no route
 var destinations = new google.maps.MVCArray();
@@ -14,6 +15,7 @@ var polyline = new google.maps.Polyline({
   strokeOpacity: 0.75,
   strokeWeight: 2
 });
+
 // Initialize google maps
 function initMap() {
     // Map options goes here
@@ -68,6 +70,7 @@ function initMap() {
     handleLocError('no geo avalible', map.center());
   }
 }
+
 // Acquire distance of route between markers from google maps api
 function getDists(callback) {
     var service = new google.maps.DistanceMatrixService();
@@ -96,6 +99,7 @@ function getDists(callback) {
         //console.log(distArray);
     });
 }
+
 // Map is completely cleared
 function clearMap() {
     clearMakers();
@@ -104,6 +108,7 @@ function clearMap() {
 
     $('#dest-count').html('0');
 }
+
 // This removes the temporary paths and markers
 function clearMakers() {
     for (index in markers) {
@@ -118,6 +123,7 @@ function clearMakers() {
     markers = [];
     $('#btns').show();
 }
+
 // This function removes the map direction
 function clearDirs() {
     // If there are directions being shown, clear them
@@ -126,6 +132,7 @@ function clearDirs() {
         directionsDisplay = null;
     }
 }
+
 // When page is loaded
 google.maps.event.addDomListener(window, 'load', initMap);
 // Create listeners
@@ -215,6 +222,7 @@ $(document).ready(function() {
         });
     });
 });
+
 // Genetic Algorithm code
 var genAlg = {
     // Default config
